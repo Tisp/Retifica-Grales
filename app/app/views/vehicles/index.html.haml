@@ -1,0 +1,33 @@
+%h1 Veículos
+
+%table.table
+  %thead
+    %tr
+      %th Proprietario
+      %th Placa
+      %th Marca
+      %th Modelo
+      %th Cor
+      %th Combustível
+      %th Cilindrada do Motor
+      %th
+      %th
+      %th
+
+  %tbody
+    - @vehicles.each do |vehicle|
+      %tr
+        %td= vehicle.user.name
+        %td= vehicle.plate
+        %td= vehicle.brand
+        %td= vehicle.model
+        %td= vehicle.color
+        %td= vehicle.fuel
+        %td= vehicle.displacement
+        %td= link_to 'Show', vehicle
+        %td= link_to 'Edit', edit_vehicle_path(vehicle)
+        %td= link_to 'Destroy', vehicle, :method => :delete, :data => { :confirm => 'Você tem certeza?' }
+
+%br
+
+= link_to 'Novo Veículo', new_vehicle_path

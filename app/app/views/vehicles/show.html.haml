@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Placa:
+  = @vehicle.plate
+%p
+  %b Marca:
+  = @vehicle.brand
+%p
+  %b Modelo:
+  = @vehicle.model
+%p
+  %b Cor:
+  = @vehicle.color
+%p
+  %b Combutível:
+  = @vehicle.fuel
+%p
+  %b Cilindrada:
+  = @vehicle.displacement
+
+= link_to 'Editar', edit_vehicle_path(@vehicle)
+\|
+= link_to 'Voltar', vehicles_path

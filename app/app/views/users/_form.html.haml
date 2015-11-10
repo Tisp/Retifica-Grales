@@ -1,0 +1,27 @@
+.row
+  .col-xs-4
+    = form_for @user, class: "form" do |f|
+      - if @user.errors.any?
+        #error_explanation
+          %h2= "#{pluralize(@user.errors.count, "erro")} foram encontrados, por favor verifique "
+          %ul
+            - @user.errors.full_messages.each do |msg|
+              %li= msg
+
+      .field
+        = f.label :name
+        = f.text_field :name, class: "form-control"
+      .field
+        = f.label :address
+        = f.text_field :address, class: "form-control"
+      .field
+        = f.label :email
+        = f.text_field :email, class: "form-control"
+      .field
+        = f.label :rg
+        = f.text_field :rg, class: "form-control"
+      .field
+        = f.label :phone
+        = f.text_field :phone, class: "form-control"
+      .actions
+        = f.submit 'Save', class: "btn btn-primary"

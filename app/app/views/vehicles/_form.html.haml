@@ -1,0 +1,32 @@
+.row
+  .col-xs-4
+    = form_for @vehicle do |f|
+      - if @vehicle.errors.any?
+        #error_explanation
+          %h2= "#{pluralize(@vehicle.errors.count, "erro")} foram encontrados, por favor verifique"
+          %ul
+            - @vehicle.errors.full_messages.each do |msg|
+              %li= msg
+      .field
+        = f.label :user
+        = f.select :user, @users
+      .field
+        = f.label :plate
+        = f.text_field :plate, class: "form-control"
+      .field
+        = f.label :brand
+        = f.text_field :brand,  class: "form-control"
+      .field
+        = f.label :model
+        = f.text_field :model, class: "form-control"
+      .field
+        = f.label :color
+        = f.text_field :color, class: "form-control"
+      .field
+        = f.label :fuel
+        = f.select :fuel, { "Álcool" => "Álcool", "Gasolina" => "Gasolina", "Diesel" => "Diesel", "GNV" => "GNV", "Elétrico" => "Elétrico"}
+      .field
+        = f.label :displacement
+        = f.text_field :displacement, class: "form-control"
+      .actions
+        = f.submit 'Salvar'

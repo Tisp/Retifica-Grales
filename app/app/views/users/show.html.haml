@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Nome:
+  = @user.name
+%p
+  %b Endereço:
+  = @user.address
+%p
+  %b Email:
+  = @user.email
+%p
+  %b RG:
+  = @user.rg
+%p
+  %b Contato:
+  = @user.phone
+
+= link_to 'Editar', edit_user_path(@user)
+\|
+= link_to 'Voltar', users_path

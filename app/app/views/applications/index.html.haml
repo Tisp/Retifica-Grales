@@ -1,0 +1,34 @@
+-# This file is app/view/movies/index.html.haml
+
+%h1 All Movies
+
+%p
+  = form_tag movies_path, :id => "ratings_form", :method => :get, :class => "form-inline" do
+    Include 
+    - @all_ratings.each do |rating|
+      = rating
+      = check_box_tag "ratings[#{rating}]", 1, @ratings.include?(rating), :id => "ratings_#{rating}", class: "checkbox"
+    = submit_tag "Refresh", :id => "ratings_submit", class: "btn btn-default"
+  
+  
+%table#movies.table 
+  %thead
+    %tr
+      %th{params[:sort] == "title" ? {class: "hilite"} : {}}
+        = link_to "Movie Title", movies_path(:sort => "title"), :id => "title_header"
+        %span.glyphicon{params[:sort] == "title" ? {class: "glyphicon-star"} : {}} 
+      %th Rating
+      %th{params[:sort] == "release_date" ? {class: "hilite"} : {}}
+        = link_to "Release Date", movies_path(:sort => "release_date"), :id => "release_date_header"
+        %span.glyphicon{params[:sort] == "release_date" ? {class: "glyphicon-star"} : {}} 
+      %th More Info
+  %tbody
+    - @movies.each do |movie|
+      %tr
+        %td= movie.title
+        %td= movie.rating
+        %td= movie.release_date
+        %td= link_to raw('Info'),movie_path(movie), class: "btn btn-primary"
+     
+     
+= link_to 'Add Movie', new_movie_path, class: "btn btn-primary"

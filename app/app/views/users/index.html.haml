@@ -1,0 +1,29 @@
+%h1 Usuários Cadastrados
+
+%table.table
+  %thead
+    %tr
+      %th Nome
+      %th Endereço
+      %th Email
+      %th RG
+      %th Contato
+      %th
+      %th
+      %th
+
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.name
+        %td= user.address
+        %td= user.email
+        %td= user.rg
+        %td= user.phone
+        %td= link_to 'Mostrar', user, class: "btn btn-primary"
+        %td= link_to 'Editar', edit_user_path(user), class: "btn btn-primary"
+        %td= link_to 'Deletar', user, class: "btn btn-primary", :method => :delete, :data => { :confirm => 'Você tem certeza?' }
+
+%br
+
+= link_to 'Novo Usuário', new_user_path
