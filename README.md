@@ -6,6 +6,7 @@ Source :
 * [GitHub](https://github.com/Tisp/Retifica-Grales) 
 * [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/1412078) 
 * [Report 1](https://docs.google.com/document/d/1xohmhGTj0VcdLkMkkmy1DL6UJx3xjFqLXyUAAxpxlI8/edit?usp=sharing) 
+* [Report 2](https://drive.google.com/drive/folders/0B7b9OYw3C12FN2U1eTZjMWpEUDg) 
 * [URL] (https://mac242-tisp.c9users.io/)
 
 Configuration (Installation Cloud9) :
