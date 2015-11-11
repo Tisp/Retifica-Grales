@@ -8,8 +8,12 @@ Source :
 * [GitHub](https://github.com/Tisp/Retifica-Grales) 
 * [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/1412078) 
 * [Report 1](https://docs.google.com/document/d/1xohmhGTj0VcdLkMkkmy1DL6UJx3xjFqLXyUAAxpxlI8/edit?usp=sharing) 
-* [Report 2](https://drive.google.com/drive/folders/0B7b9OYw3C12FN2U1eTZjMWpEUDg) 
+* [Report 2](https://docs.google.com/document/d/1pbTtjP6akvg6dhqkkFytqfVhqrLNOV7fjiZWrHvd4kk/edit) 
 * [URL] (https://mac242-tisp.c9users.io/)
+
+Authors: Théo Dury, Thiago Ivan, Monica Silva, Antônio Lima.
+
+About: This project is part of the activities required in the Programming Laboratory 2 subject. It is developed by four students.
 
 Configuration (Installation Cloud9) :
 
