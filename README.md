@@ -14,7 +14,7 @@ Configuration (Installation Cloud9) :
 * Create new workspace 
 * Add workspace name
 * Add description  
-* Add Clone from Git or Mercurial URL "git@github.com:theodury/Project-MAC242.git"
+* Add Clone from Git or Mercurial URL "git@github.com:Tisp/Retifica-Grales.git"
 * Choose a template (Use Ruby on Rails Tutorial) 
 
 Installing Rails : 
