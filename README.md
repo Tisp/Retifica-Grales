@@ -2,6 +2,8 @@
 
 Welcome to Project IME-USP for classes MAC 242 :
 
+Authors: Théo Dury, Thiago Ivan, Monica Silva, Antônio Lima.
+
 Source :
 * [GitHub](https://github.com/Tisp/Retifica-Grales) 
 * [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/1412078) 
