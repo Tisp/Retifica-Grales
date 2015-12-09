@@ -53,6 +53,16 @@
                   %li
                     %a{:href => "/vehicles"} Consultar Serviços
                     
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Finanças
+                  %span.caret
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{:href => "/finances"} Listar Finanças
+                  %li
+                    %a{:href => "/financers/new"} Adicionar Finanças
+                    
               %form.navbar-form.navbar-right{:role => "Buscar"}
                 .form-group
                   %input.form-control{:placeholder => "Buscar", :type => "text"}
