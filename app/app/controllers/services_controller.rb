@@ -75,7 +75,7 @@ class ServicesController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def vehicle_params
+    def service_params
       params.require(:service).permit(:motor, :cambio, :geral, :manutencao)
     end
 end
