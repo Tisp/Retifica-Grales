@@ -199,6 +199,3 @@ DEPENDENCIES
   uglifier (= 2.5.3)
   validates_email_format_of
   web-console (= 2.0.0.beta3)
-
-BUNDLED WITH
-   1.10.6

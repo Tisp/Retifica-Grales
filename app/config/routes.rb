@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   resources :vehicles
   resources :users
+  resources :services
   
   root 'users#index'
   

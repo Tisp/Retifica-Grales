@@ -44,6 +44,15 @@
                     %a{:href => "/vehicles"} Listar Veículos
                   %li
                     %a{:href => "/vehicles/new"} Adicionar Veículo
+                    
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Serviços
+                  %span.caret
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{:href => "/vehicles"} Consultar Serviços
+                    
               %form.navbar-form.navbar-right{:role => "Buscar"}
                 .form-group
                   %input.form-control{:placeholder => "Buscar", :type => "text"}

@@ -1,0 +1,26 @@
+%h1 Serviços
+
+%table.table
+  %thead
+    %tr
+      %th retífica do motor
+      %th retífica de câmbio automático
+      %th mecânica geral
+      %th manutenção
+      %th
+      %th
+      %th
+
+  %tbody
+    - @services.each do |service|
+      %tr
+       %td= service.vehicle.name
+        %td= service.motor
+        %td= service.cambio
+        %td= service.geral
+        %td= service.manutencao
+        %td= link_to 'Show', service
+        
+%br
+
+= link_to 'Serviços', new_service_path

@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b retifíca de motor:
+  = @service.motor
+%p
+  %b retífica de câmbio automático:
+  = @service.cambio
+%p
+  %b serviço de mecânica geral:
+  = @service.geral
+%p
+  %b serviço de manutenção:
+  = @service.manutencao
+
+= link_to 'Editar', edit_service_path(@service)
+\|
+= link_to 'Voltar', services_path
