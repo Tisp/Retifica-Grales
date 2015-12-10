@@ -10,7 +10,6 @@ Source :
 * [Report 1](https://docs.google.com/document/d/1xohmhGTj0VcdLkMkkmy1DL6UJx3xjFqLXyUAAxpxlI8/edit?usp=sharing) 
 * [Report 2](https://docs.google.com/document/d/1pbTtjP6akvg6dhqkkFytqfVhqrLNOV7fjiZWrHvd4kk/edit?usp=sharing)
 * [Report 3](https://docs.google.com/document/d/1l86BY6twLf2KXPFc943ICf2s4XGmk3IJ0X4lTGXPomo/edit?usp=sharing)
-* [URL] (https://mac242-tisp.c9users.io/)
 
 Authors: Théo Dury, Thiago Ivan, Monica Silva, Antônio Lima.
 
